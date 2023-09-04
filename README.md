@@ -1,11 +1,11 @@
-# docker-grafana
+# docker-victoriametrics
 
 Ready-to-run Docker image with VictoriaMetrics.
 
 ## Quickstart
 
 ```bash
-$ docker run --name victoriametrics -e waterscape/victoriametrics:latest
+$ docker run --name victoriametrics -e alxshelepenok/victoriametrics:latest
 ```
 
 ## Building
@@ -20,7 +20,7 @@ $ ./build.sh latest
 version: "3.9"
 
 victoriametrics:
-  image: waterscape/victoriametrics
+  image: alxshelepenok/victoriametrics
   volumes:
     - victoriametrics-data:/storage
   command:
